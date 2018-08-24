@@ -1,0 +1,7 @@
+<div class="container board">
+  <div *ngFor = "let row of size">
+    <app-cell *ngFor = "let col of size" [state] = "getCellState(col, row)"
+    (click) = "handleClick(col, row)">      
+    </app-cell>
+  </div>
+</div>
